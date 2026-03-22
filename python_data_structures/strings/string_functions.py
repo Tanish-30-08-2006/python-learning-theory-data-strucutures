@@ -10,3 +10,13 @@ print(name.capitalize())
 
 index=name.find("ang")
 print(index)
+
+c =name.count("a")
+print(c)
+
+name="bottle bottle cap"
+print(name.replace("cap","opener"))
+print(name.replace("bottle","opener"))
+print(name.replace("bottle","opener").replace("opener","cap"))
+
+
