@@ -25,3 +25,28 @@ if os.path.exists(file_path):
 # Branch: B.Tech IT
 # Year: 1
 # City: Ahmedabad
+# Hobby: Coding
+# Favorite Language: Python
+# Age: 18
+# Semester: 2
+# Favorite Subject: Programming
+# Skills: C++, Python
+# Goal: Software Engineer
+# Favorite Sport: Cricket
+# Email: tanish@example.com
+# Phone: 9999999999
+# Country: India
+# Status: Learning Python File IO
+
+
+##------------FILE1----------
+# Age: 18
+# Semester: 2
+# Favorite Subject: Programming
+# Skills: C++, Python
+# Goal: Software Engineer
+# Favorite Sport: Cricket
+# Email: tanish@example.com
+# Phone: 9999999999
+# Country: India
+# Status: Learning Python File IO
