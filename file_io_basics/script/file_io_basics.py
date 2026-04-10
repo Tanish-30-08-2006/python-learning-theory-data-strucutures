@@ -24,3 +24,28 @@ f=open("file2.txt","a")
 f.write(str)
 f.close()
 
+f=open("file2.txt","a") 
+f.write(str)           
+f.close() 
+
+#output:
+# writing into a file
+# writing into a file
+# writing into a file
+
+
+#when we do fopen and fwrite it sewrches for file in that directory here current diretory id daiict so
+# METHOD 1 : cd TanishVSCODE\python\file_IO python file_io_basics.py [GO TO THAT FILE WHERE FILE1 EXISTS
+#            as by default curretn directory is daiict..
+# METHOD 2: import os 
+f=open("file2.txt","a")
+f.write("writing is over now \ni have written it 3 times ...")
+f.close()
+
+f=open("file2.txt","r")
+data=f.read()
+print(data)
+
+
+
+
