@@ -1,0 +1,64 @@
+
+# plt.bar(x, y, ...)
+# This is the command that tells Python: "Take these two lists and draw a Bar chart."
+
+# x: These are the labels on the bottom (horizontal).
+
+# y: These are the heights of the bars (vertical).
+
+# 2. color='skyblue'
+# This is the fill color inside the bars. You can use simple names like 'red', 'green', or 'orange'.
+
+# 3. edgecolor='navy'
+# This draws a border around the bars. It makes the bars stand out so they don't look like flat blobs of color.
+
+# 4. alpha=0.7 (The "Ghost" Factor)
+# This is a very common term in computer graphics.
+
+# Definition: Alpha controls Transparency (how "see-through" something is).
+
+# Range: It goes from 0.0 to 1.0.
+
+# 1.0 = Solid color (no transparency).
+
+# 0.5 = Half see-through (like tinted glass).
+
+# 0.0 = Completely invisible.
+
+# Why use it? If you have grid lines behind your bars, setting alpha to 0.7 or 0.8 makes the graph look softer and more professional.
+
+# 5. plt.title, plt.xlabel, plt.ylabel
+# Think of these as the Sticky Notes for your graph.
+
+# Title: The big text at the top.
+
+# Xlabel: Tells people what the bottom row represents (e.g., "Grades").
+
+# Ylabel: Tells people what the numbers on the side represent (e.g., "Number of Students").
+
+# 6. plt.grid(axis='y', linestyle='--')
+# This draws lines across the graph.
+
+# axis='y': This means "only draw horizontal lines." This helps the eye track from the top of a bar to the number on the left.
+
+# linestyle='--': This makes the lines dashed instead of solid.
+
+# 7. plt.savefig() vs plt.show()
+# plt.show(): This is like a movie screening. It pops up a window for you to see right now.
+
+# plt.savefig(): This is like a camera. It takes a "picture" of the graph and saves it as a file (like chart.png) so you can look at it later or send it to someone.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
