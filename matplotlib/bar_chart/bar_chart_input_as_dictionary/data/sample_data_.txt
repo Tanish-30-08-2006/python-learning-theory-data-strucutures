@@ -1,0 +1,5 @@
+Python 45
+Java 30
+C++ 20
+JavaScript 35
+Rust 10
