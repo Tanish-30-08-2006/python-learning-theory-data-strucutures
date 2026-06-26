@@ -19,3 +19,24 @@ def generate_practice_scatter():
     
     plt.scatter(study_hours , exam_scores ,color= 'royalblue', s=100,alpha =0.6,edgecolors='black')
 
+    # 3. ADDING LABELS & INSIGHTS
+    plt.title("Correlation: Study Hours vs. Exam Performance", fontsize=14)
+    plt.xlabel("Hours Spent Studying", fontsize=12)
+    plt.ylabel("Score Achieved (Out of 100)", fontsize=12)
+
+    # Adding a grid makes it easier to track the coordinates
+    plt.grid(True, linestyle='--', alpha=0.6)
+
+
+    plt.legend()
+    plt.show()
+
+generate_practice_scatter()
+
+
+# INSIGHTS
+# Top Right Cluster: High attendance, high marks (The "Ideal" student).
+
+# Bottom Left Cluster: Low attendance, low marks (The "At Risk" student).
+
+# Top Left Outliers: Students who rarely come to class but still score 90+ (The "Independent Learners").
