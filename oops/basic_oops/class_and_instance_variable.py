@@ -23,3 +23,12 @@ Class Variables (school_name): This lives in a single memory block associated wi
 #-----------------logic of calling print(s1.school_name)-------------------
 '''
 s1.school_name = student.school_name(s1)
+
+first we check the instnace variables i.e in local memory of s1 that s1.__dict__['school_name'] exists or not
+second if not exist then follow the pointer back to parents blueprint check the student class memory for class variables(commmon)
+
+
+
+'''
+
+
