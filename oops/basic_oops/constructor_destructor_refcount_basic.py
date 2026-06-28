@@ -55,3 +55,23 @@ del s2
 
 #----------------deleting objects (del s1)----------------------#
 
+'''
+del s1 doesnt wipes the memory allocated to student s1 like alice and his marks will not be deleted 
+del s1 only removes name s1 which pointed towards dictioanry of alice and his marks 
+but del s1 reduces a reference count towards that dictionary 
+
+THE GARBAGE COLLECTOR(GC) is only thing that wipes memory so every time i call s1 garbage collector checks the ref count 
+of memory reffered by s1 i.e alice 
+when ref count hits 0 GC triggers and calls the destructor and wipes the memory..
+
+
+'''
+
+
+
+
+
+
+
+
+
