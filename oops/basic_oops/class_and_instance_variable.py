@@ -15,3 +15,11 @@ print(s1.school_name)
 
 #--------------class and instance variables-------------
 '''
+Instance Variables (self.name): These live in the memory block unique to s1 or s2.
+Class Variables (school_name): This lives in a single memory block associated with the Student class definition itself
+
+'''
+
+#-----------------logic of calling print(s1.school_name)-------------------
+'''
+s1.school_name = student.school_name(s1)
