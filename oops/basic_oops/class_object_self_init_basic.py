@@ -37,3 +37,22 @@ self says, "Whichever specific student is being created right now, give them thi
 self is essentially a pointer. When you create s1, Python allocates a chunk of memory to store Alice's data
 
 # def pass fail is a method it a function inside a class   
+'''
+ 
+
+
+#------------attributes vs methods---------------------------
+''' 
+ATTRIBUTES VS METHODS 
+attributes are parametres a student(object) HAS like self.name self.marks are attributes
+methods are functions for things student DOES like gives exam pass or fails an exam etc 
+'''
+
+
+#--------actual logic of self-----------------------------
+'''
+when we call s1.checkpassorfail() , python tranforms the code it into student.checkpassorfail(s1) so object s1(address)
+was passed as the arguement and def checkpassorfail(self) and that address here is named as self 
+now inside the function when we call self.marks python goes into the address of self i.e address of s1 and accessses offset marks 
+
+first python checks if any attribute s1.__dict__['checkpassorfail'] exists if not 
