@@ -56,3 +56,23 @@ was passed as the arguement and def checkpassorfail(self) and that address here 
 now inside the function when we call self.marks python goes into the address of self i.e address of s1 and accessses offset marks 
 
 first python checks if any attribute s1.__dict__['checkpassorfail'] exists if not 
+how python transforms it type of s1 is student so it finds student.__dict__['checkorfail']
+if it finds it then executes it if not go the parent of student here no parent so then attribute error
+
+'''
+
+
+#--------dict stored for every object ----------------------
+
+'''
+in python every object has hidden dictionary called __dict__
+s1 has a __dict__ at Address A: {'name': 'Alice', 'marks': 85}
+s2 has a __dict__ at Address B: {'name': 'Bob', 'marks': 32}
+
+when we call s1.checkpassorfail self becomes the address of s1
+student.checkpassorfail(s1) is called
+
+in the function when self.marks is called , python simply looks up for self.__dict__['marks'] to get the value 
+and when self.name is called to print, python simply looks up fo self.__dict__['name'] to get the value
+'''       
+
