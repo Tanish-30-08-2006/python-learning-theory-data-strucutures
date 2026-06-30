@@ -50,3 +50,16 @@ print(GradStudent.mro())
 # that provides the basic functionality every single thing in the language must have.
 
 # What you write:
+class Student:
+    pass
+
+# What Python sees:
+class Student(object):
+    pass
+
+# so even when student class will not have init python will go to object class and give attribute error 
+
+
+
+
+
