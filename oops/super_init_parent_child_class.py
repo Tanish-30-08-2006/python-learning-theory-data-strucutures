@@ -46,3 +46,19 @@ When you call a method like s1.display(), Python looks at the Child.
  usually methods arent stored here name marks i.e attributes are stored here
 
  second it sees type(s1) which is class scholarshipstudent so it searches for scholarshipstudent.__dict__['display']
+ so no method( def display ) is defined in scholarshipstudent 
+
+ third python goes to parent it follows the pointer to student and uses its dictionary student.__dict__['display']
+it finds it there so memory block of object s1 is passed as arguement (student.display(s1)) and goes to self
+
+fourth if student class will not have display it will search in the root(object)
+
+
+
+''' 
+
+# s1.__dict__: Python looks for display. It only finds {'name': 'alice', 'marks': 95, 'stipend': 1000}. Result: Fail.
+
+# scholarshipstudent.__dict__: Python looks for the function display. You only defined __init__ and show_stipend here. Result: Fail.
+
+# The MRO Jump: Python sees that scholarshipstudent has a parent link to student. It jumps to student.__dict__.
