@@ -37,3 +37,16 @@ s1.display()
 # searchesn in type (gradstudent) i.e class student so student.__dict__['display'] PASS
 # if not even in parent class it is searched in root class object as in python everything is an object
 
+
+#-------------------MRO PATH----------------
+print(GradStudent.mro())
+
+# OUTPUT: [<class '__main__.GradStudent'>, <class '__main__.Student'>, <class 'object'>]
+
+# WHY object is at last what does it mean ?
+
+# In Python, everything is an object—integers, strings, functions, and even the classes you create.
+# Because of this, Python needs a "Master Blueprint" 
+# that provides the basic functionality every single thing in the language must have.
+
+# What you write:
