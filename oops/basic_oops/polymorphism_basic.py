@@ -9,3 +9,7 @@ class CSE_Student(Student):
 class Art_Student(Student):
     def study(self):
         print("Sketching in the studio...")
+
+# THE DEEP LOGIC: A single loop handling different memory layouts
+students = [CSE_Student(), Art_Student(), Student()]
+
