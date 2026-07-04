@@ -24,3 +24,16 @@ s1 = GradStudent("Bob", 80)
 # class of s1 is gradstudent so gradstudent.__dict__['__init__'] is searched : result : FAIL
 
 #----------3
+# type of gradstudent now i.e parent class is student so we search student.__dict__['init'] : result : PASS
+# execute it like student.__init__(s1,"bob",80)  
+
+
+
+s1.display() 
+
+#----------1
+# searches in s1.__dict__['display'] FAIL
+# searches in type(s1) i.e class gradstudents.__dict__['display'] FAIL
+# searchesn in type (gradstudent) i.e class student so student.__dict__['display'] PASS
+# if not even in parent class it is searched in root class object as in python everything is an object
+
