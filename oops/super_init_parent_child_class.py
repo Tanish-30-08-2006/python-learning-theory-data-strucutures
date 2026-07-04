@@ -62,3 +62,19 @@ fourth if student class will not have display it will search in the root(object)
 # scholarshipstudent.__dict__: Python looks for the function display. You only defined __init__ and show_stipend here. Result: Fail.
 
 # The MRO Jump: Python sees that scholarshipstudent has a parent link to student. It jumps to student.__dict__.
+
+# student.__dict__: It finds display. Result: Success!
+
+
+
+#-------------s1.stipend()----------------
+'''
+s1.show_stipend())
+Search 1 (s1.__dict__): Fail.
+
+type of s1 is scholarshipstudent so checks in that first 
+
+Search 2 (scholarshipstudent.__dict__): Success!
+
+if fail here then we would have gone to parent 
+'''
