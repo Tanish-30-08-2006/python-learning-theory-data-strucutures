@@ -13,3 +13,7 @@ class Art_Student(Student):
 # THE DEEP LOGIC: A single loop handling different memory layouts
 students = [CSE_Student(), Art_Student(), Student()]
 
+for s in students:
+    # Python doesn't care what 'type' s is. 
+    # It just follows the MRO for EACH object to find the 'study' method.
+    s.study()
